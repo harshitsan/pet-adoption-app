@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'AppController@index');
+
+Route::get('/cats', 'AppController@cats');
+
+Route::get('/dogs', 'AppController@dogs');
